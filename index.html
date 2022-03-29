@@ -159,12 +159,10 @@
               </a><br>
               
               <b>Distributed Serverless Workflow for Stock Price Movements</b><br>
-              • Built a Serverless workflow that sends out a email notification when there is a 5% increase in Tesla's stock price.<br>
-              • Utilized CloudWatch Events to trigger the workflow by sending a notification to SQS on 1 minute intervals.<br>
-              • Programmed Lambda function written in Python to consume the notification from SQS, then communicate with
-              Yahoo Finance API to retrieve the current market price of the Tesla stock and store it in a DynamoDB database.<br>
-              • Utilized DynamoDB streams to detect updates in the database and trigger a second Lambda function to calculate
-              the change in price, then send an email notification via SES if there's a 5% increase.<br>
+              • Built a Serverless workflow that sends out an email notification when there is a 5% increase in Tesla's stock price.<br>
+              • Utilized CloudWatch Events to trigger the workflow by sending a notification to SQS at 1-minute intervals.<br>
+              • Programmed Lambda function in Python to consume the notification from SQS, then communicate with Yahoo Finance API to retrieve the current market price of the Tesla stock and store it in a DynamoDB database.<br>
+              • Utilized DynamoDB streams to detect updates in the database and trigger a second Lambda function to calculate the change in price, then send an email notification via SES if there's a 5% increase.<br>
               
               
             </div>
