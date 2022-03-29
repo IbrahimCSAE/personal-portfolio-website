@@ -153,6 +153,21 @@
 
           <div class="col-12 col-xl-6">
             <h3>›› Projects</h3>
+            <div class="resume-item">
+              <a href="https://www.ibrahimcs.me/img/serverless-stock.png" target="_blank" rel="noopener noreferrer">
+                <img src="img/serverless.png" height="50" style="margin-bottom: 10px" alt="Logo of To Do List">
+              </a><br>
+              
+              <b>Distributed Serverless Workflow for Stock Price Movements</b><br>
+              • Built a Serverless workflow that sends out a email notification when there is a 5% increase in Tesla's stock price.<br>
+              • Utilized CloudWatch Events to trigger the workflow by sending a notification to SQS on 1 minute intervals.<br>
+              • Programmed Lambda function written in Python to consume the notification from SQS, then communicate with
+              Yahoo Finance API to retrieve the current market price of the Tesla stock and store it in a DynamoDB database.<br>
+              • Utilized DynamoDB streams to detect updates in the database and trigger a second Lambda function to calculate
+              the change in price, then send an email notification via SES if there's a 5% increase.<br>
+              
+              
+            </div>
 
             <div class="resume-item">
               <a href="https://ibrahimcs.me" target="_blank" rel="noopener noreferrer">
@@ -182,19 +197,6 @@
             </div>
             
 
-            <div class="resume-item">
-                <a href="https://www.ibrahim-cs.live" target="_blank" rel="noopener noreferrer">
-                  <img src="img/password.png" height="50" style="margin-bottom: 10px" alt="Logo of GitHub">
-                </a><br>
-                
-                <b>Password Generator</b><br>
-                •  Developed a web-app using the Flask framework in Python, that allows users to generate custom passwords.<br>
-                •  Used CSS and HTML to create the structure and design of the app, and to add support for mobile devices.<br>
-                •  Allowed users to have several different customization options by using the random module in Python.<br>
-                •  Hosted the web-app using Elastic Beanstalk on AWS, and used a custom domain to deliver the app to end users.<br>
-                
-              </div>
-
             <br><br>
 
             
@@ -215,7 +217,7 @@
                 <img src="img/databases.png" height="50" style="margin-bottom: 10px" alt="Logo of Universty of Michigan">
               </a><br>
               <b>Databases/Cloud</b><br>
-              •  SQLite, AWS, DynamoDB<br>
+              •  AWS, SQL, DynamoDB, EC2, ELB, ASG, S3, RDS, Route53, SQS, SNS, ECS, VPC.<br>
               
               
             </div>
