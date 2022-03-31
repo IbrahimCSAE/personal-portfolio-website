@@ -5,7 +5,9 @@
    • Calculated user trends and patterns by gathering data using Google Analytics tracking tags.<br/>
    • Optimized the website by leveraging CloudFront to communicate with AWS S3 and deploy the website on 225+ points of presence guaranteeing ultra-low latency and high availability.<br/>
    • Utilized Route53 DNS service to map CloudFront to a custom domain to deliver the website to end users.<br/>
-  • You can visit my website here [ibrahimcs.me](https://www.ibrahimcs.me).<br/>
+   • Programmed a Lambda function in Python to detect S3 bucket updates and invalidate the CloudFront cache.<br/>
+   • You can visit my website here [ibrahimcs.me](https://www.ibrahimcs.me).<br/>
+   
   
 # Technologies Used
 
