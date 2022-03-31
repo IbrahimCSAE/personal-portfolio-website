@@ -18,6 +18,7 @@
 
 # AWS Services Used
  ![S3](https://d1zornxddiqw2q.cloudfront.net/icon/c0828e0381730befd1f7a025057c74fb-43acc0496e64afba82dbc9ab774dc622.svg) S3 <br/>
+ ![Lambda](https://d1zornxddiqw2q.cloudfront.net/icon/945f3fc449518a73b9f5f32868db466c-926961f91b072604c42b7f39ce2eaf1c.svg) Lambda <br/>
  ![Route53](https://d1zornxddiqw2q.cloudfront.net/icon/f5d2c00d40914bff4f82f29f9ef768bc-53a84099cf556710383a52b4612a8612.svg) Route53 <br/>
  ![CloudFront](https://d1zornxddiqw2q.cloudfront.net/icon/4200ac8906c9a841a229ed9e5008a533-465d196059bdeeb0ffcb07ebe5f79b28.svg) CloudFront <br/>
  ![Code Pipeline](https://d1zornxddiqw2q.cloudfront.net/icon/59874d8b5a9e702e16641126cc15e561-8137f94920dd8639de205d20e8e72ad6.svg) Code Pipeline <br/>
