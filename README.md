@@ -26,5 +26,9 @@
  ![CloudFront](https://d1zornxddiqw2q.cloudfront.net/icon/4200ac8906c9a841a229ed9e5008a533-465d196059bdeeb0ffcb07ebe5f79b28.svg) CloudFront <br/>
  ![Code Pipeline](https://d1zornxddiqw2q.cloudfront.net/icon/59874d8b5a9e702e16641126cc15e561-8137f94920dd8639de205d20e8e72ad6.svg) Code Pipeline <br/>
  ![AWS Certificate Manager](https://d1zornxddiqw2q.cloudfront.net/icon/02b55e4f52388520bfe11f959f836e68-b8cdde73b02af863b91a2296bbd10b4c.svg) AWS Certificate Manager <br/>
+ 
+ # How does it work? (AWS Diagram)
+ ![Diagram](https://github.com/IbrahimCSAE/personal-portfolio-website/blob/main/img/Diagram.png)
+
 
 
