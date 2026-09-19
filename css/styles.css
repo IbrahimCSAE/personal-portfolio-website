@@ -47,6 +47,26 @@ body {
     border: 2px solid #c61f1f;
   }
   
+  .work-shots {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-top: 15px;
+  }
+
+  .work-shots img {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    transition: transform 0.15s ease;
+  }
+
+  .work-shots img:hover {
+    transform: scale(1.02);
+  }
+
   .dates {
     font-size: 16px;
     background: #ededed;

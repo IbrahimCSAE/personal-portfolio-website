@@ -21,7 +21,7 @@
   <meta name="author" content="Ibrahim Mohamed">
   <meta name="language" content="English">
   <meta name="title" content="Ibrahim Mohamed: Principal Software Engineer">
-  <meta name="description" content="Principal Software engineer specializing in medical imaging, AI, and modern web platforms.">
+  <meta name="description" content="Principal Software Engineer specializing in medical imaging, AI, and modern web platforms.">
   <meta name="keywords"
     content="software,engineer,developer,web,design,html,css,html,development,java,python,aws,sql,medicalimaging,medical,ohif, cornerstone, cornerstone3D, dicom">
   <meta name="robots" content="index, follow">
@@ -32,14 +32,14 @@
   <meta property="og:url" content="http://www.ibrahimcs.me">
   <meta property="og:image" content="http://www.ibrahimcs.me/img/cover.png">
   <meta property="og:description"
-    content="Principal Software engineer specializing in medical imaging, AI, and modern web platforms.">
+    content="Principal Software Engineer specializing in medical imaging, AI, and modern web platforms.">
 
   <meta name="twitter:card" content="summary_large_image">
   <meta property="twitter:domain" content="ibrahimcs.me">
   <meta property="twitter:url" content="https://www.ibrahimcs.me">
   <meta name="twitter:title" content="Ibrahim Mohamed: Software engineer">
   <meta name="twitter:description"
-    content="Principal Software engineer specializing in medical imaging, AI, and modern web platforms.">
+    content="Principal Software Engineer specializing in medical imaging, AI, and modern web platforms.">
   <meta name="twitter:image" content="http://www.ibrahimcs.me/img/cover.png">
 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
@@ -62,7 +62,7 @@
       style="width: 100%; height: 100%;"></canvas></div>
   <div id="header" class="container">
     <h1>Ibrahim Mohamed</h1>
-    <h2>Principal Software engineer specializing in medical imaging, AI, and modern web platforms.</h2>
+    <h2>Principal Software Engineer specializing in medical imaging, AI, and modern web platforms.</h2>
     <a href="https://www.ibrahimcs.me/Ibrahim_Resume.pdf" target="_blank" rel="noopener noreferrer"><i
         class="bi-file-text"></i> Resume</a>
     <a href="https://github.com/IbrahimCSAE" target="_blank" rel="noopener noreferrer"><i class="bi-github"></i>
@@ -115,9 +115,56 @@
                 </defs>
               </svg>
             </a><br>
-            <span class="dates">2024 — Present</span><br>
+            <span class="dates">Nov 2025 — Present</span><br>
             <b>Principal Software Engineer</b> – New Lantern<br>
-            &bull; Leading the evolution of New Lantern's imaging viewer and product roadmap.<br>
+            &bull; Lead the Viewer team (3 engineers): own the imaging roadmap, set weekly priorities and run standups.
+            Authored 575 merged PRs across frontend, backend, infrastructure and ML services, and reviewed 456 PRs from
+            15+ engineers.<br>
+            &bull; Launched HyperSync: cross-study image registration on a Modal-hosted ANTs service (rigid and affine,
+            scored by mutual information) that aligns prior exams to the current study, so scrolling, measurements,
+            trend charts and report insertion follow anatomy across studies. Cut registration from about 3 minutes to
+            16 seconds.<br>
+            &bull; Cut viewport interaction latency from 3,000 ms to 30 ms on 23,000-image studies and rebuilt frame
+            caching (worker-pool decoding, size-aware read budgets) from production telemetry. Platform p90 study load
+            time fell 46% (19.4 s to 10.4 s) over the period.<br>
+            &bull; Built /manage, an in-product admin console that replaced Django admin for technologists and PACS
+            admins: users, studies, patients, sites, billing, audit log (18M-row table), site onboarding, report
+            delivery and critical results. About 30 full-stack PRs in three weeks, plus the customer user guide and a
+            documentation ownership model across 7 product areas.<br>
+            &bull; Built the New Lantern phone app: mobile worklist and chat, the full diagnostic viewer with touch
+            controls, dictation and sign-off, prior reports, and on-call worklist alerts that reach staff within a
+            minute of a study landing.<br>
+            &bull; Launched New Lantern on the Elgato Stream Deck Marketplace: 120+ viewer, worklist and reporter
+            actions on physical keys, profiles for 6 device types, and the current patient, RVUs and unread messages on
+            the dial display. Built the plugin, the browser-extension bridge and in-app command routing.<br>
+            &bull; Incident commander for a SEV1 dictation outage affecting every customer: traced it to a broken
+            upstream speech-detection release in 7 minutes and restored service in 32.<br>
+            &bull; Built the viewer's observability stack: Datadog RUM, continuous browser profiling, GPU telemetry,
+            per-stage study-open timing and diagnostics auto-attached to support tickets. My Viewer Metrics dashboard
+            tracks about 5,700 study opens a day by 1,000+ users across 9 customer groups.<br>
+            &bull; Expanded mammography CAD: Hologic EmphaSize sizing, per-finding and case scores, and one-click
+            navigation from a 2D CAD mark to its tomosynthesis slice. Traced a silent missing-marks bug (26,006 errors
+            in 30 days) to its root cause.<br>
+            &bull; Co-created the New Lantern Residency, a 4-week program for early-career engineering, ML and design
+            talent that drew 239 completed applications, and led development of its application platform.<br>
+            <div class="work-shots">
+              <a href="img/new-lantern/phone-app.jpg" target="_blank" rel="noopener noreferrer"><img
+                  src="img/new-lantern/phone-app.jpg" loading="lazy"
+                  alt="New Lantern phone app showing the worklist, a CT study and on-call alerts"></a>
+              <a href="img/new-lantern/hypersync.jpg" target="_blank" rel="noopener noreferrer"><img
+                  src="img/new-lantern/hypersync.jpg" loading="lazy"
+                  alt="Current and prior head CT side by side in the New Lantern viewer"></a>
+              <a href="img/new-lantern/stream-deck.jpg" target="_blank" rel="noopener noreferrer"><img
+                  src="img/new-lantern/stream-deck.jpg" loading="lazy"
+                  alt="New Lantern Stream Deck profile with viewer tools and live patient, RVU and chat dials"></a>
+              <a href="img/new-lantern/admin-console.jpg" target="_blank" rel="noopener noreferrer"><img
+                  src="img/new-lantern/admin-console.jpg" loading="lazy"
+                  alt="New Lantern admin console showing the Manage Sites overview"></a>
+            </div>
+            <br>
+            <span class="dates">Oct 2024 — Nov 2025</span><br>
+            <b>Software Engineer</b> – New Lantern<br>
+            &bull; Led the evolution of New Lantern's imaging viewer and product roadmap.<br>
             &bull; Delivered a production-grade mammography suite with advanced tools, BI-RADS reporting, and
             radiologist-centric workflows, expanding New Lantern’s market and driving adoption.<br>
             &bull; Designed a production-ready PET/CT and PET/MR fusion module with SUV quantification, tumor
@@ -125,15 +172,13 @@
             molecular imaging.<br>
             &bull; Engineered a fully customizable and intelligent hanging protocol system, empowering radiologists to
             define, optimize, and personalize viewing layouts across all imaging modalities.<br>
-            &bull; Reduced time-to-first-image to as low as 10 ms through advanced caching strategies, including CDN
-            edge warming and intelligent local caching.<br>
+            &bull; Pioneered a frontend performance overhaul that cut first-pixel load from 1.8s to under 100ms, with
+            CDN edge warming and local caching bringing cached studies down to as low as 10 ms.<br>
             &bull; Engineered high-performance multi-monitor support for the core radiology viewer, enabling seamless
             configuration and synchronized image display across up to four monitors.<br>
             &bull; Integrated advanced AI models into clinical workflows, including SAM 2 for interactive medical image
             segmentation, TotalSegmentator for multi-organ labeling, and LLMs for structured report generation,
             accelerating diagnostic workflows and enabling intelligent automation.<br>
-            &bull; Pioneered a complete frontend performance overhaul, slashing first-pixel load from 1.8s to ≤100ms,
-            making New Lantern the fastest imaging viewer on the market.<br>
             &bull; Led a large-scale refactor of the viewer’s architecture, introducing clean separation of concerns,
             modular builds, and scalable design patterns to dramatically reduce technical debt and improve
             maintainability.<br>
@@ -152,7 +197,7 @@
             </a><br>
             <span class="dates">2023 — 2025 &bull; 2 yrs</span><br>
             <b>Lead Software Engineer</b> – Radical Imaging<br>
-            &bull; Leading the team of engineers behind the flexible SaaS DICOM viewer FlexView.<br>
+            &bull; Led the team of engineers behind the flexible SaaS DICOM viewer FlexView.<br>
             &bull; Engineered a flexible SaaS DICOM viewer using NestJS and NextJS. This cloud-based viewer effortlessly
             integrates with diverse workflows, maintaining its core functionality while providing adaptability.<br>
             &bull; Developed software solutions to tackle challenges in medical imaging projects, primarily focusing on
