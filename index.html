@@ -74,25 +74,22 @@
     <a href="mailto:ibrahim.mdev@gmail.com"><i class="bi-envelope"></i> Contact</a>
   </div>
 
-  <img width="100%" src="img/clouds_top.png" alt="Image of clouds">
+  <img width="100%" src="img/clouds_top.png" alt="">
   <div class="grey-bg">
-    <div class="container">
-      <div class="row align-items-start">
-        <div class="col">
-
-        </div>
+    <nav class="section-nav" aria-label="Sections">
+      <div class="container">
+        <a href="#experience">Experience</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#education">Education and awards</a>
       </div>
-
-      <br><br>
-
-      <div class="row">
-        <div class="col-12 col-xl-6">
-
-          <h3>›› Industry Experience</h3>
-
-          <div class="resume-item">
-            <a href="https://newlantern.ai/" target="_blank" rel="noopener noreferrer">
-              <svg height="60" style="margin-bottom: 10px; stroke: black;" xmlns="http://www.w3.org/2000/svg"
+    </nav>
+    <div class="container">
+      <div class="row gx-lg-5">
+        <div class="col-12 col-lg-8">
+          <section id="experience">
+            <h3>›› Industry Experience</h3>
+            <article class="resume-item"><div class="company-logo"><a href="https://newlantern.ai/" target="_blank" rel="noopener noreferrer" aria-label="New Lantern"><svg height="60" style="margin-bottom: 10px; stroke: black;" xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 168 32" fill="none" class="w-auto h-[32px]">
                 <g clip-path="url(#clip0_197_93)">
                   <path fill-rule="evenodd" clip-rule="evenodd"
@@ -113,308 +110,25 @@
                     <rect width="167.118" height="32" fill="white"></rect>
                   </clipPath>
                 </defs>
-              </svg>
-            </a><br>
-            <span class="dates">Nov 2025 — Present</span><br>
-            <b>Principal Software Engineer</b> – New Lantern<br>
-            &bull; Lead the Viewer team (3 engineers): own the imaging roadmap, set weekly priorities and run standups.
-            Authored 575 merged PRs across frontend, backend, infrastructure and ML services, and reviewed 456 PRs from
-            15+ engineers.<br>
-            &bull; Launched HyperSync: cross-study image registration on a Modal-hosted ANTs service (rigid and affine,
-            scored by mutual information) that aligns prior exams to the current study, so scrolling, measurements,
-            trend charts and report insertion follow anatomy across studies. Cut registration from about 3 minutes to
-            16 seconds.<br>
-            &bull; Cut viewport interaction latency from 3,000 ms to 30 ms on 23,000-image studies and rebuilt frame
-            caching (worker-pool decoding, size-aware read budgets) from production telemetry. Platform p90 study load
-            time fell 46% (19.4 s to 10.4 s) over the period.<br>
-            &bull; Built /manage, an in-product admin console that replaced Django admin for technologists and PACS
-            admins: users, studies, patients, sites, billing, audit log (18M-row table), site onboarding, report
-            delivery and critical results. About 30 full-stack PRs in three weeks, plus the customer user guide and a
-            documentation ownership model across 7 product areas.<br>
-            &bull; Built the New Lantern phone app: mobile worklist and chat, the full diagnostic viewer with touch
-            controls, dictation and sign-off, prior reports, and on-call worklist alerts that reach staff within a
-            minute of a study landing.<br>
-            &bull; Launched New Lantern on the Elgato Stream Deck Marketplace: 120+ viewer, worklist and reporter
-            actions on physical keys, profiles for 6 device types, and the current patient, RVUs and unread messages on
-            the dial display. Built the plugin, the browser-extension bridge and in-app command routing.<br>
-            &bull; Incident commander for a SEV1 dictation outage affecting every customer: traced it to a broken
-            upstream speech-detection release in 7 minutes and restored service in 32.<br>
-            &bull; Built the viewer's observability stack: Datadog RUM, continuous browser profiling, GPU telemetry,
-            per-stage study-open timing and diagnostics auto-attached to support tickets. My Viewer Metrics dashboard
-            tracks about 5,700 study opens a day by 1,000+ users across 9 customer groups.<br>
-            &bull; Expanded mammography CAD: Hologic EmphaSize sizing, per-finding and case scores, and one-click
-            navigation from a 2D CAD mark to its tomosynthesis slice. Traced a silent missing-marks bug (26,006 errors
-            in 30 days) to its root cause.<br>
-            &bull; Co-created the New Lantern Residency, a 4-week program for early-career engineering, ML and design
-            talent that drew 239 completed applications, and led development of its application platform.<br>
-            <div class="work-shots">
-              <a href="img/new-lantern/phone-app.jpg" target="_blank" rel="noopener noreferrer"><img
-                  src="img/new-lantern/phone-app.jpg" loading="lazy"
-                  alt="New Lantern phone app showing the worklist, a CT study and on-call alerts"></a>
-              <a href="img/new-lantern/hypersync.jpg" target="_blank" rel="noopener noreferrer"><img
-                  src="img/new-lantern/hypersync.jpg" loading="lazy"
-                  alt="Current and prior head CT side by side in the New Lantern viewer"></a>
-              <a href="img/new-lantern/stream-deck.jpg" target="_blank" rel="noopener noreferrer"><img
-                  src="img/new-lantern/stream-deck.jpg" loading="lazy"
-                  alt="New Lantern Stream Deck profile with viewer tools and live patient, RVU and chat dials"></a>
-              <a href="img/new-lantern/admin-console.jpg" target="_blank" rel="noopener noreferrer"><img
-                  src="img/new-lantern/admin-console.jpg" loading="lazy"
-                  alt="New Lantern admin console showing the Manage Sites overview"></a>
-            </div>
-            <br>
-            <span class="dates">Oct 2024 — Nov 2025</span><br>
-            <b>Software Engineer</b> – New Lantern<br>
-            &bull; Led the evolution of New Lantern's imaging viewer and product roadmap.<br>
-            &bull; Delivered a production-grade mammography suite with advanced tools, BI-RADS reporting, and
-            radiologist-centric workflows, expanding New Lantern’s market and driving adoption.<br>
-            &bull; Designed a production-ready PET/CT and PET/MR fusion module with SUV quantification, tumor
-            segmentation, and MIP 3D visualization, powering oncology workflows and extending New Lantern’s reach into
-            molecular imaging.<br>
-            &bull; Engineered a fully customizable and intelligent hanging protocol system, empowering radiologists to
-            define, optimize, and personalize viewing layouts across all imaging modalities.<br>
-            &bull; Pioneered a frontend performance overhaul that cut first-pixel load from 1.8s to under 100ms, with
-            CDN edge warming and local caching bringing cached studies down to as low as 10 ms.<br>
-            &bull; Engineered high-performance multi-monitor support for the core radiology viewer, enabling seamless
-            configuration and synchronized image display across up to four monitors.<br>
-            &bull; Integrated advanced AI models into clinical workflows, including SAM 2 for interactive medical image
-            segmentation, TotalSegmentator for multi-organ labeling, and LLMs for structured report generation,
-            accelerating diagnostic workflows and enabling intelligent automation.<br>
-            &bull; Led a large-scale refactor of the viewer’s architecture, introducing clean separation of concerns,
-            modular builds, and scalable design patterns to dramatically reduce technical debt and improve
-            maintainability.<br>
-            &bull; Served as the go-to expert for DICOM and medical imaging, contributing deep knowledge in image
-            decoding, rendering optimization, and diagnostic workflow support across the platform.<br>
-            &bull; Established structured planning with estimates and milestones, improving engineering throughput.<br>
-            <br><br>
-          </div>
-
-
-
-
-          <div class="resume-item">
-            <a href="https://radicalimaging.com/" target="_blank" rel="noopener noreferrer">
-              <img src="img/radical-imaging.png" height="60" style="margin-bottom: 10px" alt="Logo of Radical Imaging">
-            </a><br>
-            <span class="dates">2023 — 2025 &bull; 2 yrs</span><br>
-            <b>Lead Software Engineer</b> – Radical Imaging<br>
-            &bull; Led the team of engineers behind the flexible SaaS DICOM viewer FlexView.<br>
-            &bull; Engineered a flexible SaaS DICOM viewer using NestJS and NextJS. This cloud-based viewer effortlessly
-            integrates with diverse workflows, maintaining its core functionality while providing adaptability.<br>
-            &bull; Developed software solutions to tackle challenges in medical imaging projects, primarily focusing on
-            web development, cloud, and AI.<br>
-            &bull; Addressed and rectified critical security vulnerabilities within the AWS infrastructure, leading to
-            substantial improvements in security and system integrity.<br>
-            &bull; Integrated AWS Marketplace into our SaaS offerings, resulting in a remarkable 40% surge in customer
-            acquisition.<br>
-            &bull; Successfully integrated Pager-Duty for real-time outage monitoring, achieving a notable reduction in
-            system downtime and streamlining issue resolution processes.<br>
-            &bull; Established validation methods for existing clinical tools in the viewer, streamlining the FDA
-            application process and ensuring compliance with regulatory standards.<br>
-            &bull; Implemented comprehensive automated testing strategies, leveraging frameworks such as Jest, Cypress,
-            and Playwright, which increased code reliability and reduced debugging time by 30%.<br>
-            &bull; Engineered multiple integrations for our SaaS DICOM viewer, notably with EPIC EHR, NVIDIA's MONAI for
-            AI-enhanced medical imaging, and major cloud services, enhancing interoperability and utility in
-            healthcare.<br>
-            &bull; Core maintainer of Cornerstone3D (https://www.cornerstonejs.org/) and Open Health Imaging Foundation
-            OHIF (https://ohif.org/).<br>
-            &bull; Enhanced on-premise deployment and authentication for the OHIF viewer by integrating KeyCloak,
-            oauth-2proxy, and nginx, resulting in a seamless and secure deployment process.<br>
-
-            <br><br>
-          </div>
-
-
-          <div class="resume-item">
-            <a href="https://www.hgj.ca" target="_blank" rel="noopener noreferrer">
-              <img src="img/CIUSSS-West-Central-Montreal.png" height="60" style="margin-bottom: 10px"
-                alt="Logo of CIUSSS du Centre-Ouest-de-l'Île-de-Montréal | CIUSSS West-Central Montreal">
-            </a><br>
-            <span class="dates">2022 — 2023 &bull; 1 yr 2 mos </span><br>
-            <b>Software Engineer</b> – CIUSSS West-Central Montreal<br>
-            &bull; Deployed and configured ML models on AWS, using EC2 accelerated compute instances and Sagemaker.<br>
-            &bull; Prepared ML models for inference using FastAPI, Nginx, and AWS Load Balancer.<br>
-            &bull; Built a user authentication system using AWS Cognito and FastAPI to verify user JWT tokens.<br>
-            &bull; Engineered several architectural diagrams and led planning of app development and infrastructure
-            design.<br>
-            &bull; Programmed a web-based DICOM viewer with extreme performance by utilizing Vue3 and CornerstoneJS's
-            robust accelerated image display and multi-threaded image decoding.<br>
-            &bull; Beta tester for Amazon HealthLake Imaging.<br>
-
-            <br><br>
-          </div>
-
-          <div class="resume-item">
-            <a href="https://grafana.com/" target="_blank" rel="noopener noreferrer">
-              <img src="img/Grafana_logo.svg.png" height="60" style="margin-bottom: 10px" alt="Logo of Grafana">
-            </a><br>
-            <span class="dates">Winter 2022 &bull; 3 mos</span><br>
-            <b>Software Engineer</b> – Grafana Labs<br>
-            &bull; Designed and implemented an admin page for managing feature toggles, allowing users to toggle
-            features independently, enhancing user autonomy, and reducing support load.<br>
-            &bull; Contributed to significantly reducing user reliance on support by facilitating direct visibility into
-            active feature toggles on their Grafana instance.<br>
-            &bull; Authored comprehensive design documents detailing the new feature's functionality, architecture, and
-            user flow.<br>
-            &bull; Gained hands-on experience with Golang, integrating backend API endpoints, and utilized React/TS for
-            front-end components, ensuring responsive and dynamic UI/UX.<br>
-            <br><br>
-          </div>
-
-
-
-
-          <h3>›› Education</h3>
-
-          <div class="resume-item">
-
-            <a href="https://www.mun.ca" target="_blank" rel="noopener noreferrer">
-              <img src="img/memorialuniversity.png" height="40" style="margin-bottom: 10px"
-                alt="Logo of Memorial University">
-            </a><br>
-            <span class="dates">2020 — 2024</span><br>
-            <b>B.Sc. Major: Computer Science</b> – Memorial University<br>
-
-            <br><br>
-          </div>
-          <h3>›› Awards &amp; Certificates</h3>
-
-
-
-          <div class="resume-item">
-            <a href="https://www.ibrahimcs.me/AWS-SAP.pdf" target="_blank" rel="noopener noreferrer">
-              <img src="img/aws_p.png" height="150" style="margin-bottom: 10px;   " alt="Logo of AWS">
-            </a><br>
-            <b>AWS Certified Solutions Architect - Professional</b><br>
-            &bull; Designed solutions on AWS for organizational complexity, and continuously improved existing
-            solutions.<br>
-            &bull; Accelerated workload migration and modernization by utilizing several AWS services.<br>
-            &bull; Evaluated cloud application requirements and made architectural recommendations for deployment of
-            applications on AWS.<br>
-            &bull; Provided expert guidance about architectural design that extends across multiple applications and
-            projects within a complex organization.<br>
-
-          </div>
-
-          <div class="resume-item">
-            <a href="https://www.mcgill.ca/medhealthsci/about/faculty-awards-prizes/clic/2023-winners-finalists"
-              target="_blank" rel="noopener noreferrer">
-              <img src="img/mcgill.png" height="150" style="margin-bottom: 10px;   " alt="Logo of McGill">
-            </a><br>
-            <b>McGill - Clinical Innovation Competition</b><br>
-            &bull; Winner of the First Marika Zelenka Roy Innovation Prize.<br>
-            &bull; Developed and built frontend, backend, and cloud resources for CoreSlicer, a cloud-based AI
-            platform.<br>
-            &bull; Automated the measurement of frailty and body composition from medical images (CT, MRI,
-            ultrasound).<br>
-            &bull; Collaborated with a multidisciplinary team including medical professionals, developers, data
-            scientists, machine learning engineers, and interface designers.<br>
-            &bull; Demonstrated expertise in developing and implementing innovative solutions for healthcare
-            applications.<br>
-            &bull; Empowered clinicians to individualize care for older patients, reducing postoperative complications,
-            adverse events, and emergency readmissions.<br>
-
-          </div>
-
-          <div class="resume-item">
-            <a href="https://www.ibrahimcs.me/AWS-SAA.pdf" target="_blank" rel="noopener noreferrer">
-              <img src="img/aws_a.png" height="150" style="margin-bottom: 10px;   " alt="Logo of AWS">
-            </a><br>
-            <b>AWS Certified Solutions Architect - Associate</b><br>
-            &bull; Earned the AWS Certified Solutions Architect certificate.<br>
-            &bull; Designed solutions by using appropriate AWS services and following architectural principles based on
-            requirements.<br>
-            &bull; Demonstrated the ability to provide implementation guidance based on best practices to the
-            organization throughout the workload life cycle.<br>
-            &bull; Designed and implemented resilient, high performing, secure and cost optimized architectures on
-            AWS.<br>
-
-          </div>
-
-
-
-
-
-
-
-
-
-
-
+              </svg></a></div><div class="role"><span class="dates">Nov 2025 — Present</span><h4 class="role-title"><b>Principal Software Engineer</b> – New Lantern</h4><ul class="highlights"><li>Lead the Viewer team (3 engineers) and own the imaging roadmap. Authored 575 merged PRs across frontend, backend, infra and ML services; reviewed 456 more from 15+ engineers.</li><li>Launched HyperSync: cross-study registration on a Modal-hosted ANTs service (rigid + affine, scored by mutual information) that aligns priors to the current exam, so scrolling, measurements and trend charts follow anatomy. Cut registration from ~3 min to 16 s.</li><li>Cut viewport interaction latency from 3,000 ms to 30 ms on 23,000-image studies and rebuilt frame caching from production telemetry. Platform p90 study load time fell 46% (19.4 s to 10.4 s).</li><li>Rebuilt the admin experience as /manage, one in-product portal for users, studies, patients, sites, billing, audit logs, onboarding, report delivery and critical results. ~30 full-stack PRs in three weeks, plus the customer user guide.</li><li>Built the phone app: worklist, chat, the full diagnostic viewer with touch controls, dictation and sign-off, priors, and on-call alerts within a minute of a study landing.</li><li>Launched New Lantern on the Elgato Stream Deck Marketplace: 120+ actions on physical keys, 6 device profiles, live patient, RVU and chat dials.</li><li>Led incident response and customer escalations across 9 customer groups, including commanding several SEV0 and SEV1 incidents.</li><li>Built the viewer's observability stack (Datadog RUM, browser profiling, GPU telemetry, study-open timing) for a viewer that streams 16M+ image frames (7.7 TB) a week and opens several million studies a month.</li><li>Expanded mammography CAD: Hologic EmphaSize, per-finding and case scores, one-click 2D-to-tomo navigation.</li><li>Co-created the New Lantern Residency (239 completed applications) and led its application platform.</li></ul><div class="media-strip"><button type="button" class="shot" data-full="img/new-lantern/hypersync.jpg" data-caption="HyperSync: current vs prior"><img src="img/new-lantern/hypersync.jpg" alt="HyperSync: current vs prior" loading="lazy"><span>HyperSync: current vs prior</span></button><button type="button" class="shot" data-full="img/new-lantern/phone-app.jpg" data-caption="New Lantern on your phone"><img src="img/new-lantern/phone-app.jpg" alt="New Lantern on your phone" loading="lazy"><span>New Lantern on your phone</span></button><button type="button" class="shot" data-full="img/new-lantern/stream-deck.jpg" data-caption="New Lantern on Stream Deck"><img src="img/new-lantern/stream-deck.jpg" alt="New Lantern on Stream Deck" loading="lazy"><span>New Lantern on Stream Deck</span></button><button type="button" class="shot" data-full="img/new-lantern/admin-console.jpg" data-caption="The /manage admin portal"><img src="img/new-lantern/admin-console.jpg" alt="The /manage admin portal" loading="lazy"><span>The /manage admin portal</span></button></div></div><div class="role"><span class="dates">Oct 2024 — Nov 2025</span><h4 class="role-title"><b>Software Engineer</b> – New Lantern</h4><ul class="highlights"><li>Led the evolution of New Lantern's imaging viewer and product roadmap.</li><li>Delivered a production-grade mammography suite with advanced tools, BI-RADS reporting, and radiologist-centric workflows, expanding New Lantern’s market and driving adoption.</li><li>Designed a production-ready PET/CT and PET/MR fusion module with SUV quantification, tumor segmentation, and MIP 3D visualization, powering oncology workflows and extending New Lantern’s reach into molecular imaging.</li><li>Pioneered a frontend performance overhaul that cut first-pixel load from 1.8s to under 100ms, with CDN edge warming and local caching bringing cached studies down to as low as 10 ms.</li></ul><details class="more"><summary>Show all 10 highlights</summary><ul class="highlights"><li>Engineered a fully customizable and intelligent hanging protocol system, empowering radiologists to define, optimize, and personalize viewing layouts across all imaging modalities.</li><li>Engineered high-performance multi-monitor support for the core radiology viewer, enabling seamless configuration and synchronized image display across up to four monitors.</li><li>Integrated advanced AI models into clinical workflows, including SAM 2 for interactive medical image segmentation, TotalSegmentator for multi-organ labeling, and LLMs for structured report generation, accelerating diagnostic workflows and enabling intelligent automation.</li><li>Led a large-scale refactor of the viewer’s architecture, introducing clean separation of concerns, modular builds, and scalable design patterns to dramatically reduce technical debt and improve maintainability.</li><li>Served as the go-to expert for DICOM and medical imaging, contributing deep knowledge in image decoding, rendering optimization, and diagnostic workflow support across the platform.</li><li>Established structured planning with estimates and milestones, improving engineering throughput.</li></ul></details><div class="media-strip"><button type="button" class="shot" data-full="img/work/nl-mammography-viewer.jpg" data-caption="Mammography viewer"><img src="img/work/nl-mammography-viewer.jpg" alt="Mammography viewer" loading="lazy"><span>Mammography viewer</span></button><button type="button" class="shot" data-full="img/work/nl-pet-viewer.jpg" data-caption="PET/CT and PET/MR viewer"><img src="img/work/nl-pet-viewer.jpg" alt="PET/CT and PET/MR viewer" loading="lazy"><span>PET/CT and PET/MR viewer</span></button><button type="button" class="shot" data-full="img/work/nl-hanging-protocols.jpg" data-caption="Hanging protocols"><img src="img/work/nl-hanging-protocols.jpg" alt="Hanging protocols" loading="lazy"><span>Hanging protocols</span></button><button type="button" class="shot" data-full="img/work/nl-multi-monitor.jpg" data-caption="Multi-monitor support"><img src="img/work/nl-multi-monitor.jpg" alt="Multi-monitor support" loading="lazy"><span>Multi-monitor support</span></button><button type="button" class="shot" data-full="img/work/nl-mammography-toolkit.jpg" data-caption="Mammography toolkit"><img src="img/work/nl-mammography-toolkit.jpg" alt="Mammography toolkit" loading="lazy"><span>Mammography toolkit</span></button><button type="button" class="shot" data-full="img/work/nl-webgl-context-pooling.jpg" data-caption="WebGL context pooling"><img src="img/work/nl-webgl-context-pooling.jpg" alt="WebGL context pooling" loading="lazy"><span>WebGL context pooling</span></button><button type="button" class="shot" data-full="img/work/cs3d-webgl-context-pool.jpg" data-caption="Cornerstone3D #2190: WebGLContextPool"><img src="img/work/cs3d-webgl-context-pool.jpg" alt="Cornerstone3D #2190: WebGLContextPool" loading="lazy"><span>Cornerstone3D #2190: WebGLContextPool</span></button><button type="button" class="shot" data-full="img/work/cs3d-sequential-rendering.jpg" data-caption="Cornerstone3D #2181: SequentialRenderingEngine"><img src="img/work/cs3d-sequential-rendering.jpg" alt="Cornerstone3D #2181: SequentialRenderingEngine" loading="lazy"><span>Cornerstone3D #2181: SequentialRenderingEngine</span></button></div></div></article><article class="resume-item"><div class="company-logo"><a href="https://radicalimaging.com/" target="_blank" rel="noopener noreferrer"><img src="img/radical-imaging.png" height="48" alt="Radical Imaging logo"></a></div><div class="role"><span class="dates">2023 — 2025</span><h4 class="role-title"><b>Lead Software Engineer</b> – Radical Imaging</h4><ul class="highlights"><li>Led the team of engineers behind the flexible SaaS DICOM viewer FlexView.</li><li>Engineered a flexible SaaS DICOM viewer using NestJS and NextJS. This cloud-based viewer effortlessly integrates with diverse workflows, maintaining its core functionality while providing adaptability.</li><li>Core maintainer of Cornerstone3D (https://www.cornerstonejs.org/) and Open Health Imaging Foundation OHIF (https://ohif.org/).</li><li>Integrated AWS Marketplace into our SaaS offerings, resulting in a remarkable 40% surge in customer acquisition.</li></ul><details class="more"><summary>Show all 11 highlights</summary><ul class="highlights"><li>Developed software solutions to tackle challenges in medical imaging projects, primarily focusing on web development, cloud, and AI.</li><li>Addressed and rectified critical security vulnerabilities within the AWS infrastructure, leading to substantial improvements in security and system integrity.</li><li>Successfully integrated Pager-Duty for real-time outage monitoring, achieving a notable reduction in system downtime and streamlining issue resolution processes.</li><li>Established validation methods for existing clinical tools in the viewer, streamlining the FDA application process and ensuring compliance with regulatory standards.</li><li>Implemented comprehensive automated testing strategies, leveraging frameworks such as Jest, Cypress, and Playwright, which increased code reliability and reduced debugging time by 30%.</li><li>Engineered multiple integrations for our SaaS DICOM viewer, notably with EPIC EHR, NVIDIA's MONAI for AI-enhanced medical imaging, and major cloud services, enhancing interoperability and utility in healthcare.</li><li>Enhanced on-premise deployment and authentication for the OHIF viewer by integrating KeyCloak, oauth-2proxy, and nginx, resulting in a seamless and secure deployment process.</li></ul></details><div class="media-strip"><button type="button" class="shot" data-full="img/work/radical-flexview.jpg" data-caption="FlexView DICOM viewer"><img src="img/work/radical-flexview.jpg" alt="FlexView DICOM viewer" loading="lazy"><span>FlexView DICOM viewer</span></button><button type="button" class="shot" data-full="img/work/radical-ohif-v38.jpg" data-caption="OHIF v3.8 showcase"><img src="img/work/radical-ohif-v38.jpg" alt="OHIF v3.8 showcase" loading="lazy"><span>OHIF v3.8 showcase</span></button><button type="button" class="shot" data-full="img/work/radical-aws-marketplace.jpg" data-caption="FlexView on AWS Marketplace"><img src="img/work/radical-aws-marketplace.jpg" alt="FlexView on AWS Marketplace" loading="lazy"><span>FlexView on AWS Marketplace</span></button><button type="button" class="shot" data-full="img/work/radical-itcr.jpg" data-caption="ITCR contributions"><img src="img/work/radical-itcr.jpg" alt="ITCR contributions" loading="lazy"><span>ITCR contributions</span></button><button type="button" class="shot" data-full="img/work/radical-ohif-rbac.jpg" data-caption="RBAC for OHIF with Keycloak, OAuth2 Proxy and nginx"><img src="img/work/radical-ohif-rbac.jpg" alt="RBAC for OHIF with Keycloak, OAuth2 Proxy and nginx" loading="lazy"><span>RBAC for OHIF with Keycloak, OAuth2 Proxy and nginx</span></button><button type="button" class="shot" data-full="img/work/radical-playwright.jpg" data-caption="OHIF docs: writing Playwright tests"><img src="img/work/radical-playwright.jpg" alt="OHIF docs: writing Playwright tests" loading="lazy"><span>OHIF docs: writing Playwright tests</span></button><button type="button" class="shot" data-full="img/work/radical-ohif-app-types.jpg" data-caption="OHIF docs: extending app types and services"><img src="img/work/radical-ohif-app-types.jpg" alt="OHIF docs: extending app types and services" loading="lazy"><span>OHIF docs: extending app types and services</span></button><button type="button" class="shot" data-full="img/work/radical-ohif-mobile-debugging.jpg" data-caption="OHIF docs: Android and iOS debugging"><img src="img/work/radical-ohif-mobile-debugging.jpg" alt="OHIF docs: Android and iOS debugging" loading="lazy"><span>OHIF docs: Android and iOS debugging</span></button></div></div></article><article class="resume-item"><div class="company-logo"><a href="https://www.hgj.ca" target="_blank" rel="noopener noreferrer"><img src="img/CIUSSS-West-Central-Montreal.png" height="48" alt="CIUSSS West-Central Montreal logo"></a></div><div class="role"><span class="dates">2022 — 2023</span><h4 class="role-title"><b>Software Engineer</b> – CIUSSS West-Central Montreal</h4><ul class="highlights"><li>Deployed and configured ML models on AWS, using EC2 accelerated compute instances and Sagemaker.</li><li>Programmed a web-based DICOM viewer with extreme performance by utilizing Vue3 and CornerstoneJS's robust accelerated image display and multi-threaded image decoding.</li><li>Built a user authentication system using AWS Cognito and FastAPI to verify user JWT tokens.</li></ul><details class="more"><summary>Show all 6 highlights</summary><ul class="highlights"><li>Prepared ML models for inference using FastAPI, Nginx, and AWS Load Balancer.</li><li>Engineered several architectural diagrams and led planning of app development and infrastructure design.</li><li>Beta tester for Amazon HealthLake Imaging.</li></ul></details></div></article><article class="resume-item"><div class="company-logo"><a href="https://grafana.com/" target="_blank" rel="noopener noreferrer"><img src="img/Grafana_logo.svg.png" height="48" alt="Grafana Labs logo"></a></div><div class="role"><span class="dates">Winter 2022</span><h4 class="role-title"><b>Software Engineer</b> – Grafana Labs</h4><ul class="highlights"><li>Designed and implemented an admin page for managing feature toggles, allowing users to toggle features independently, enhancing user autonomy, and reducing support load.</li><li>Contributed to significantly reducing user reliance on support by facilitating direct visibility into active feature toggles on their Grafana instance.</li></ul><details class="more"><summary>Show all 4 highlights</summary><ul class="highlights"><li>Authored comprehensive design documents detailing the new feature's functionality, architecture, and user flow.</li><li>Gained hands-on experience with Golang, integrating backend API endpoints, and utilized React/TS for front-end components, ensuring responsive and dynamic UI/UX.</li></ul></details></div></article>
+          </section>
         </div>
-
-        <div class="col-12 col-xl-6">
-
-          <h3>›› Projects</h3>
-          <div class="resume-item">
-            <a href="https://www.ibrahimcs.me/img/serverless-stock.png" target="_blank" rel="noopener noreferrer">
-              <img src="img/serverless.png" height="50" style="margin-bottom: 10px" alt="Logo of To Do List">
-            </a><br>
-
-            <b>Distributed Serverless Workflow for Stock Price Movements</b><br>
-            &bull; Built a Serverless workflow that sends out an email notification when there is a 5% increase in
-            Tesla's stock price.<br>
-            &bull; Utilized CloudWatch Events to trigger the workflow by sending a notification to SQS at 1-minute
-            intervals.<br>
-            &bull; Programmed Lambda function in Python to consume the notification from SQS, then communicate with
-            Yahoo Finance API to retrieve the current market price of the Tesla stock and store it in a DynamoDB
-            database.<br>
-            &bull; Utilized DynamoDB streams to detect updates in the database and trigger a second Lambda function to
-            calculate the change in price, then send an email notification via SES if there's a 5% increase.<br>
-
-
-          </div>
-
-
-
-
-
-          <br><br>
-
-
-          <h3>›› Skills</h3>
-
-          <div class="resume-item">
-            <a href="https://www.ibrahimcs.me/Ibrahim_Resume.pdf" target="_blank" rel="noopener noreferrer">
-              <img src="img/langauges.png" height="50" style="margin-bottom: 10px"
-                alt="Logo of John Hopkins University">
-            </a><br>
-            <b>Langauges</b><br>
-            &bull; Python(Flask, Django), JavaScript(Node.js, React.js, Vue.js), TypeScript, Java, HTML, CSS, SQL, C<br>
-
-
-          </div>
-
-          <div class="resume-item">
-            <a href="https://www.ibrahimcs.me/Ibrahim_Resume.pdf" target="_blank" rel="noopener noreferrer">
-              <img src="img/databases.png" height="50" style="margin-bottom: 10px" alt="Logo of Universty of Michigan">
-            </a><br>
-            <b>Databases/Cloud</b><br>
-            &bull; AWS, SQL, DynamoDB, EC2, ELB, ASG, S3, RDS, Route53, SQS, SNS, ECS, VPC, Cognito, Fargate, Aurora,
-            Lambda, CloudFront, Security Groups<br>
-
-
-          </div>
-
-          <div class="resume-item">
-            <a href="https://www.ibrahimcs.me/Ibrahim_Resume.pdf" target="_blank" rel="noopener noreferrer">
-              <img src="img/version control.png" height="50" style="margin-bottom: 10px; "
-                alt="Logo of University of Michigan">
-            </a><br>
-            <b>Version Control </b><br>
-            &bull; Github.<br>
-
-          </div>
-
-
-
-
-
-        </div>
-
-
+        <aside class="col-12 col-lg-4 sidebar">
+          <section id="skills">
+            <h3>›› Skills</h3>
+            <div class="skill-group"><h4>Medical imaging</h4><ul class="chips"><li>DICOM</li><li>DICOMweb</li><li>Cornerstone3D</li><li>OHIF</li><li>WebGL</li><li>Mammography and tomosynthesis</li><li>PET/CT fusion</li><li>Image registration (ANTs, ITK)</li></ul></div><div class="skill-group"><h4>Frontend</h4><ul class="chips"><li>TypeScript</li><li>React</li><li>Vue</li><li>Next.js</li><li>Tailwind CSS</li><li>Web Workers</li></ul></div><div class="skill-group"><h4>Backend</h4><ul class="chips"><li>Python</li><li>Django</li><li>FastAPI</li><li>Flask</li><li>Node.js</li><li>NestJS</li><li>Celery</li><li>PostgreSQL</li><li>Redis</li></ul></div><div class="skill-group"><h4>Cloud and infrastructure</h4><ul class="chips"><li>AWS</li><li>GCP Healthcare API</li><li>Cloudflare R2 and Workers</li><li>Modal</li><li>Docker</li><li>Terraform</li><li>Lambda</li><li>CloudFront</li><li>S3</li><li>Cognito</li><li>SageMaker</li></ul></div><div class="skill-group"><h4>AI and ML</h4><ul class="chips"><li>PyTorch</li><li>ONNX Runtime</li><li>SAM 2</li><li>TotalSegmentator</li><li>LLMs</li></ul></div><div class="skill-group"><h4>Quality and observability</h4><ul class="chips"><li>Datadog RUM and APM</li><li>Playwright</li><li>Jest</li><li>Cypress</li><li>PagerDuty</li><li>Git and GitHub</li></ul></div>
+          </section>
+          <section id="projects">
+            <h3>›› Projects</h3>
+            <div class="compact-item"><div class="compact-logo"><a href="img/serverless-stock.png" target="_blank" rel="noopener noreferrer"><img src="img/serverless.png" height="44" alt="Serverless stock workflow diagram"></a></div><div><b>Serverless stock price alerts</b><p>Emails me when Tesla stock rises 5%. CloudWatch Events, SQS, Lambda (Python), DynamoDB Streams and SES. <a href="img/serverless-stock.png" target="_blank" rel="noopener noreferrer">Architecture</a></p><details class="more"><summary>Details</summary><ul class="highlights"><li>Utilized CloudWatch Events to trigger the workflow by sending a notification to SQS at 1-minute intervals.</li><li>Programmed a Lambda function in Python to consume the notification from SQS, fetch the current Tesla price from the Yahoo Finance API and store it in DynamoDB.</li><li>Used DynamoDB Streams to trigger a second Lambda that calculates the change and sends an email through SES on a 5% increase.</li></ul></details></div></div><div class="compact-item"><div class="compact-logo"><a href="https://github.com/IbrahimCSAE/personal-portfolio-website" target="_blank" rel="noopener noreferrer"><img src="img/personalportfolio.png" height="44" alt="Portfolio website"></a></div><div><b>This website</b><p>Static site on S3 behind CloudFront, with Route53, ACM and a Lambda that clears the CDN cache on every deploy. <a href="img/Diagram.png" target="_blank" rel="noopener noreferrer">Architecture</a></p></div></div>
+          </section>
+          <section id="education">
+            <h3>›› Education &amp; Awards</h3>
+            <div class="compact-item"><div class="compact-logo"><a href="https://www.mun.ca" target="_blank" rel="noopener noreferrer"><img src="img/memorialuniversity.png" height="30" alt="Memorial University logo"></a></div><div><b>B.Sc. Computer Science</b><p>Memorial University, 2020 — 2024</p></div></div><div class="compact-item"><div class="compact-logo"><a href="https://www.ibrahimcs.me/AWS-SAP.pdf" target="_blank" rel="noopener noreferrer"><img src="img/aws_p.png" height="56" alt="AWS Certified Solutions Architect Professional badge"></a></div><div><b>AWS Certified Solutions Architect – Professional</b><p><a href="AWS-SAP.pdf" target="_blank" rel="noopener noreferrer">Certificate</a></p><details class="more"><summary>Details</summary><ul class="highlights"><li>Designed solutions on AWS for organizational complexity, and continuously improved existing solutions.</li><li>Accelerated workload migration and modernization by utilizing several AWS services.</li><li>Evaluated cloud application requirements and made architectural recommendations for deployment of applications on AWS.</li></ul></details></div></div><div class="compact-item"><div class="compact-logo"><a href="https://www.mcgill.ca/medhealthsci/about/faculty-awards-prizes/clic/2023-winners-finalists" target="_blank" rel="noopener noreferrer"><img src="img/mcgill.png" height="56" alt="McGill University logo"></a></div><div><b>McGill Clinical Innovation Competition</b><p>Winner of the first Marika Zelenka Roy Innovation Prize for CoreSlicer, a cloud AI platform that measures frailty and body composition from CT, MRI and ultrasound.</p><details class="more"><summary>Details</summary><ul class="highlights"><li>Developed and built frontend, backend, and cloud resources for CoreSlicer.</li><li>Collaborated with a multidisciplinary team including medical professionals, developers, data scientists, machine learning engineers, and interface designers.</li><li>Empowered clinicians to individualize care for older patients, reducing postoperative complications, adverse events, and emergency readmissions.</li></ul></details></div></div><div class="compact-item"><div class="compact-logo"><a href="https://www.ibrahimcs.me/AWS-SAA.pdf" target="_blank" rel="noopener noreferrer"><img src="img/aws_a.png" height="56" alt="AWS Certified Solutions Architect Associate badge"></a></div><div><b>AWS Certified Solutions Architect – Associate</b><p><a href="AWS-SAA.pdf" target="_blank" rel="noopener noreferrer">Certificate</a></p></div></div>
+          </section>
+        </aside>
       </div>
     </div>
-  </div>
   </div>
 
   <div class="grey-bg">
@@ -436,6 +150,29 @@
   </script>
 
 
+<dialog id="lightbox" aria-label="Image preview">
+    <button type="button" class="lightbox-close" aria-label="Close preview">&times;</button>
+    <img alt="">
+    <p class="lightbox-caption"></p>
+  </dialog>
+  <script>
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = lightbox.querySelector('img');
+    const lightboxCaption = lightbox.querySelector('.lightbox-caption');
+    document.querySelectorAll('.shot').forEach((shot) => {
+      shot.addEventListener('click', () => {
+        lightboxImg.src = shot.dataset.full;
+        lightboxImg.alt = shot.dataset.caption;
+        lightboxCaption.textContent = shot.dataset.caption;
+        lightbox.showModal();
+      });
+    });
+    lightbox.addEventListener('click', (event) => {
+      if (event.target === lightbox || event.target.closest('.lightbox-close')) {
+        lightbox.close();
+      }
+    });
+  </script>
 </body>
 
 </html>

@@ -47,24 +47,257 @@ body {
     border: 2px solid #c61f1f;
   }
   
-  .work-shots {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
-    margin-top: 15px;
+  .section-nav {
+    position: sticky;
+    top: 0;
+    z-index: 20;
+    background: rgba(245, 245, 245, 0.96);
+    border-bottom: 1px solid #e2e2e2;
+    margin-bottom: 30px;
   }
 
-  .work-shots img {
-    width: 100%;
-    aspect-ratio: 16 / 9;
+  .section-nav .container {
+    white-space: nowrap;
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
+
+  .section-nav a {
+    display: inline-block;
+    padding: 12px 0;
+    margin-right: 22px;
+    color: #262b2f;
+    font-weight: 700;
+    text-decoration: none;
+  }
+
+  .section-nav a:hover,
+  .section-nav a:focus-visible {
+    color: #c61f1f;
+  }
+
+  section {
+    scroll-margin-top: 60px;
+    margin-bottom: 30px;
+  }
+
+  .company-logo svg,
+  .company-logo img {
+    height: 48px;
+    width: auto;
+    margin-bottom: 12px;
+  }
+
+  .role + .role {
+    margin-top: 28px;
+  }
+
+  .role-title {
+    font-size: 1.05rem;
+    font-weight: 400;
+    margin: 0 0 8px;
+  }
+
+  .highlights {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .highlights li {
+    position: relative;
+    padding-left: 16px;
+    margin-bottom: 6px;
+  }
+
+  .highlights li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0.72em;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #c61f1f;
+  }
+
+  details.more summary {
+    color: #c61f1f;
+    font-weight: 700;
+    cursor: pointer;
+    margin: 4px 0 8px;
+  }
+
+  details.more[open] summary {
+    margin-bottom: 10px;
+  }
+
+  .media-strip {
+    display: flex;
+    gap: 12px;
+    overflow-x: auto;
+    scroll-snap-type: x proximity;
+    padding: 6px 2px 12px;
+    margin-top: 14px;
+  }
+
+  .shot {
+    flex: 0 0 auto;
+    width: 230px;
+    padding: 0;
+    border: 0;
+    background: none;
+    text-align: left;
+    scroll-snap-align: start;
+    cursor: zoom-in;
+  }
+
+  .shot img {
+    display: block;
+    width: 230px;
+    height: 130px;
     object-fit: cover;
-    border-radius: 8px;
-    border: 1px solid #ddd;
-    transition: transform 0.15s ease;
+    object-position: top left;
+    border-radius: 6px;
+    border: 1px solid #d9d9d9;
+    background: #262b2f;
   }
 
-  .work-shots img:hover {
-    transform: scale(1.02);
+  .shot span {
+    display: block;
+    margin-top: 5px;
+    font-size: 14px;
+    color: #444;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .shot:hover img,
+  .shot:focus-visible img {
+    border-color: #c61f1f;
+  }
+
+  .shot:focus-visible {
+    outline: 3px solid #c61f1f;
+    outline-offset: 3px;
+    border-radius: 6px;
+  }
+
+  .sidebar section {
+    padding-top: 2px;
+  }
+
+  .skill-group {
+    margin: 16px 0;
+  }
+
+  .skill-group h4 {
+    font-size: 1rem;
+    font-weight: 700;
+    margin: 0 0 8px;
+  }
+
+  .chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .chips li {
+    background: #fff;
+    border: 1px solid #dedede;
+    border-radius: 14px;
+    padding: 2px 11px;
+    font-size: 14px;
+  }
+
+  .compact-item {
+    display: flex;
+    gap: 14px;
+    align-items: flex-start;
+    padding: 14px 0;
+    border-bottom: 1px solid #e4e4e4;
+    line-height: 1.5;
+  }
+
+  .compact-item:last-child {
+    border-bottom: 0;
+  }
+
+  .compact-logo {
+    flex: 0 0 64px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .compact-logo img {
+    max-width: 64px;
+    height: auto;
+  }
+
+  .compact-item p {
+    margin: 2px 0 0;
+    color: #444;
+  }
+
+  .compact-item a {
+    color: #c61f1f;
+  }
+
+  #lightbox {
+    border: 0;
+    padding: 0;
+    background: transparent;
+    max-width: min(1400px, 94vw);
+    overflow: visible;
+  }
+
+  #lightbox::backdrop {
+    background: rgba(20, 22, 24, 0.88);
+  }
+
+  #lightbox img {
+    display: block;
+    max-width: 100%;
+    max-height: 82vh;
+    border-radius: 6px;
+  }
+
+  .lightbox-caption {
+    color: #fff;
+    margin: 10px 0 0;
+  }
+
+  .lightbox-close {
+    position: absolute;
+    top: -44px;
+    right: 0;
+    border: 0;
+    background: none;
+    color: #fff;
+    font-size: 34px;
+    line-height: 1;
+    cursor: pointer;
+  }
+
+  @media (max-width: 575px) {
+    .shot,
+    .shot img {
+      width: 190px;
+    }
+
+    .shot img {
+      height: 108px;
+    }
+
+    .section-nav a {
+      margin-right: 14px;
+      font-size: 15px;
+    }
   }
 
   .dates {
